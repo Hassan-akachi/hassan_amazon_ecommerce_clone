@@ -4,22 +4,30 @@ This is a clone amazon app with backend funtionalities and admin
 ## FEATURES(consumer)
 ### user authentication
 ### deal of day
+<Img src="screenshot/home-user.png" width="100" >
 - ![HOME](screenshot/home-user.png)
 ## order progress
+<Img src="screenshot/tracking.png" width="100" >
 - ![TRACKING](screenshot/tracking.png)
 ## paying with apple or googlepay
-- ![GOOGLEPAY](screenshot/buy-user.png)
-- ![APPLEPAY](screenshot/applepay.png)
+<Img src="screenshot/buy-user.png" width="100" >
+<Img src="screenshot/applepay.png" width="100" >
+
 ## cart
-![CART](screenshot/cart-user.png)
+<Img src="screenshot/cart-user.png" width="100" >
+
 ## search
-- ![SEARCH](screenshot/search-user.png)
+<Img src="screenshot/search-user.png" width="100" >
+
 - ## product detail and rating
-- ![DETAILS](screenshot/product-details-user.png)
+<Img src="screenshot/product-details-user.png" width="100" >
+
 ## FEATURES(Admin)
 - ### order analysis
-- ![ANALYSIS](screenshot/analysis.png)
+<Img src="screenshot/analysis.png" width="100" >
+
   ## adding of goods
-- ![ADD](screenshot/admin-home.png)
+  <Img src="screenshot/admin-home.png" width="100" >
 - ## order progress manipulation
-- ![TRACKING](screenshot/tracking.png)
+<Img src="screenshot/tracking.png" width="100" >
+

@@ -1,7 +1,17 @@
 # amazon_clone
 
-A new Flutter project.
-
+This is a clone amazon app with backend funtionalities and admin 
+## FEATURES(consumer)
+- [user authentication]
+-[deal of day]
+-order progress
+-paying with apple or googlepay
+-cart
+-search
+## FEATURES(Admin)
+- order analysis
+-adding of goods
+-order progress manipulation
 ## Getting Started
 
 This project is a starting point for a Flutter application.

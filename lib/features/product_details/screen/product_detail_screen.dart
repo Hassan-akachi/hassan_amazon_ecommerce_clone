@@ -9,6 +9,7 @@ import '../../../common/widget/stars.dart';
 import '../../../constant/color.dart';
 import '../../../models/product.dart';
 import '../../../providers/user_provider.dart';
+import '../../address/screen/Address_screen.dart';
 import '../../search/screen/search_screen.dart';
 import '../services/product_detail_services.dart';
 
@@ -220,7 +221,13 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               padding: const EdgeInsets.all(10),
               child: CustomButton(
                 buttonText: 'Buy Now',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    AddressScreen.routeName,
+                    arguments: 1.toString(),
+                  );
+                },
                 buttoncolor: GlobalColor.secondaryColor,
                 textcolor: Colors.white,
                 iconData: Icons.shopping_bag_outlined,

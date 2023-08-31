@@ -81,7 +81,7 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       var order = routeSettings.arguments as Order;
       return MaterialPageRoute(
         settings: routeSettings,
-        builder: (_) => OrderDetailScreen(
+        builder: (_) =>  OrderDetailScreen(
           order: order,
         ),
       );

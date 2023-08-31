@@ -166,14 +166,14 @@ class _AddProductScreenState extends State<AddProductScreen> {
                   controller: priceController,
                   hint: 'Price',
                   autofillHints: null,
-                  inputType: TextInputType.number,
+                  inputType: TextInputType.phone,
                 ),
                 const SizedBox(height: 10),
                 CustomEditText(
                   controller: quantityController,
                   hint: 'Quantity',
                   autofillHints: null,
-                  inputType: TextInputType.number,
+                  inputType: TextInputType.phone,
                 ),
                 const SizedBox(height: 10),
                 SizedBox(

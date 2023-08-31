@@ -13,7 +13,7 @@ class OrderDetailScreen extends StatefulWidget {
   static const String routeName = '/order-details';
   final Order order;
 
-  const OrderDetailScreen({
+   OrderDetailScreen({
     Key? key,
     required this.order,
   }) : super(key: key);
@@ -40,7 +40,7 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
   void changeOrderStatus(int status) {
     adminServices.changeOrderStatus(
       context: context,
-      status: status + 1,
+      status: status+1,//currentStep + 1
       order: widget.order,
       onSuccess: () {
         setState(() {
@@ -52,7 +52,9 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final user = Provider.of<UserProvider>(context).user;
+    final user = Provider
+        .of<UserProvider>(context)
+        .user;
 
     return Scaffold(
       appBar: PreferredSize(
@@ -232,7 +234,8 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
                         buttonText: 'Done',
                         onPressed: () => changeOrderStatus(details.currentStep),
                         buttoncolor: GlobalColor.secondaryColor,
-                        textcolor: Colors.white, iconData: Icons.check,
+                        textcolor: Colors.white,
+                        iconData: Icons.check,
                       );
                     }
                     return const SizedBox();

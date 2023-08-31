@@ -14,7 +14,7 @@ class CustomEditText extends StatelessWidget {
       {Key? key,
      
       required this.hint,
-      required this.inputType,
+      this.inputType=TextInputType.emailAddress,
       required this.controller, required this.autofillHints,this.maxlines=1})
       : super(key: key);
 
@@ -24,7 +24,7 @@ class CustomEditText extends StatelessWidget {
       decoration:
           kEmailEditTextDecoration.copyWith(hintText: hint, labelText: hint),
       textAlign: TextAlign.center,
-      keyboardType: TextInputType.emailAddress,
+      keyboardType: inputType,
       controller: controller,
       autofillHints: autofillHints,
       maxLines: maxlines ,

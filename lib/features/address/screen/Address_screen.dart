@@ -166,6 +166,7 @@ class _AddressScreenState extends State<AddressScreen> {
                       hint: 'Flat, House no, Building',
                       inputType: TextInputType.streetAddress,
                       autofillHints: null,
+                      maxlines: 3,
                     ),
                     const SizedBox(height: 10),
                     CustomEditText(
@@ -173,6 +174,7 @@ class _AddressScreenState extends State<AddressScreen> {
                       hint: 'Area, Street',
                       inputType: TextInputType.text,
                       autofillHints: null,
+                      maxlines: 5,
                     ),
                     const SizedBox(height: 10),
                     CustomEditText(
@@ -183,6 +185,7 @@ class _AddressScreenState extends State<AddressScreen> {
                     CustomEditText(
                       controller: cityController,
                       hint: 'Town/City', inputType: TextInputType.text, autofillHints: null,
+                      maxlines: 3,
                     ),
                     const SizedBox(height: 10),
                   ],
